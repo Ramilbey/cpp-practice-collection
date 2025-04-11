@@ -28,7 +28,9 @@ int main() {
     double v = volume(r);
     cout << "Volume is " << v << endl;
 
-  
+    //*5.Write a program in C++ to merge two arrays.
+    // a.Create array1 and array2 and merge both arrays into array3
+    // b.Create a function (mergeArray) to combine two arrays*
 
     
     int sizeOne;
