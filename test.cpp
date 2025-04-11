@@ -28,9 +28,9 @@ int main() {
     double v = volume(r);
     cout << "Volume is " << v << endl;
 
-    return 0;
+  
 
-
+    
     int sizeOne;
     cout << "Enter the size of first array: ";
     cin >> sizeOne;
@@ -48,6 +48,13 @@ int main() {
     for(int i= 0; i < sizeTwo; i++)
         cin >> arr2[i];
     int mergedArr[sum];
+    for(int i = 0; i < sizeOne; i++)
+        mergedArr[i] = arr1[i];
+    for( int i = 0; i< sizeTwo; i++)
+        mergedArr[sizeOne + i] = arr2[i];
+    for(int i =0 ; i < sum; i++)
+        cout<< mergedArr[i];
+      return 0;
     
 }
 
