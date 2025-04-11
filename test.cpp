@@ -29,4 +29,25 @@ int main() {
     cout << "Volume is " << v << endl;
 
     return 0;
+
+
+    int sizeOne;
+    cout << "Enter the size of first array: ";
+    cin >> sizeOne;
+    int sizeTwo; 
+    cout << "Enter the size of the second array: ";
+    cin >> sizeTwo;
+    int sum;
+    sum = sizeOne + sizeTwo;
+    int arr1[sizeOne];
+    cout << "Enter " << sizeOne << " elements in array one: "<<endl;
+    for(int i =0; i<sizeOne; i++)
+        cin >> arr1[i];
+    int arr2[sizeTwo]; 
+    cout << "Enter " << sizeTwo<< " elements in array two: "<< endl;
+    for(int i= 0; i < sizeTwo; i++)
+        cin >> arr2[i];
+    int mergedArr[sum];
+    
 }
+
