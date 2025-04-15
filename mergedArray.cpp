@@ -1,4 +1,4 @@
-//merging two array with each other
+//merging two arrays with each other
 #include <iostream>
 using namespace std;
 void merging(int arr1[], int arr2[], int size1, int size2, int merged[]){
