@@ -7,6 +7,10 @@ void merging(int arr1[], int arr2[], int size1, int size2, int merged[]){
     for(int i = 0; i < size2; i++)
         merged[size1 + i] = arr2[i];
 }
+void loop(int arr[], int size1, int size2){
+    for( int i = 0 ; i < size1 +size2; i++)
+        cout<< arr[i]<< " ";   
+}
 int main (){ 
     int size1 = 8;
     int size2 = 3;
@@ -14,7 +18,4 @@ int main (){
     int arr2[size2] = {9,10,11};
     int merged[size1 + size2];
     merging(arr1, arr2, size1, size2, merged);
-    for (int i = 0; i < size1 + size2; i++)
-        cout << merged[i] << " ";
-    return 0;
 }
