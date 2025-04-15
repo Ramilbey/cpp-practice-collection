@@ -4,7 +4,7 @@ using namespace std;
 int seqSearch(int arr[], int n, int item){
     for(int i = 0 ; i < n; i ++)
         if(arr[i] == item)
-            return i; // returns the found item and terminates ( stops the loop)
+            return arr[i]; // returns the found item and terminates ( stops the loop)
     return -1;
 }
 int main (){ 
@@ -13,12 +13,12 @@ int main (){
     int item =10;//worst case
     int index = seqSearch(arr,n, item);
     if(index == -1)
-        cout << "Item not found"<<endl;
+        cout << "Item not found "<<endl;
     else if(index ==0) 
-        cout <<"Best case"<<endl;
+        cout <<"Best case "<<endl;
     else if (index ==n-1)
-        cout <<"Worst case";
+        cout <<"Worst case "<< endl;
     else
-        cout <<"Average case";
+        cout <<"Average case "<< endl;
     cout <<index; //we can cout here no need in function cout
 }
