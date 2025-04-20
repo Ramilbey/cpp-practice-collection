@@ -1,18 +1,45 @@
-//binary search
 #include <iostream>
-using namespace std; 
-int main(){
-  int size = 8;
-  int arr[size] = {8,4,5,6,2,1,3,7};
-  for(int i = 0; i< size; i++)
-    cout<< arr[i] << " " ;
-  cout << endl;
-  bool isAcending = false;
-  for(int i = 0; i < size -1; i++)//lcheck if it is acending
-    if(arr[i] > arr[i+1])
-      isAcending = true;
-  if(isAcending)
-    cout<< "True";
-  else
-    cout << "False";
+using namespace std;
+
+void insert(int& size, int arr[]) {
+    cout << "Enter how many elements you want to add? ";
+    cin >> size;
+    cout << "Enter the " << size << " elements: ";
+    for (int i = 0; i < size; i++)
+        cin >> arr[i];
+}
+
+
+void print(int size, int arr[]) {
+    cout << "Array: ";
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+void isAscend(int size, int arr[]) {
+    bool isAsc = true;
+    for (int i = 0; i < size - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            isAsc = false;
+            break;
+        }
+    }
+    cout << "Is array in ascending order? ";
+    if (isAsc)
+        cout << "True" << endl;
+    else
+        cout << "False" << endl;
+}
+
+int main() {
+    const int MAX = 100;
+    int arr[MAX];
+    int size;
+
+    insert(size, arr);
+    print(size, arr);
+    isAscend(size, arr);
+
+    return 0;
 }
