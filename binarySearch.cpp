@@ -31,15 +31,35 @@ void isAscend(int size, int arr[]) {
     else
         cout << "False" << endl;
 }
+int binary(int arr[], int size, int target){
+    int l = 0;
+    int h = size -1;
+
+    while(l <=h){
+        int mid = (l + h ) / 2;
+        if(arr[mid] == target)
+            return mid;
+        else if(arr[mid] <target)
+            l= mid + 1;
+        else
+            h = mid -1;
+    }
+    return -1;
+}
 
 int main() {
-    const int MAX = 100;
-    int arr[MAX];
-    int size;
+    int size = 100;
+    int arr[size];
+    int target = 4;
 
     insert(size, arr);
     print(size, arr);
     isAscend(size, arr);
+    int result = binary(arr, size, target);
+    if(result != -1)
+        cout<< "The target found at index " << result;
+    else 
+        cout<< "Element not found";
 
     return 0;
 }
