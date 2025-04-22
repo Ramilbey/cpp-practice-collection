@@ -90,7 +90,7 @@ int main() {
     else 
         cout<< "Average case"<< endl;
         
-    if(result ==0|| result == size)
+    if(result ==0|| result == size-1)
         cout<< "worst case";
     else if( result == size/2)
         cout << "Best case";
