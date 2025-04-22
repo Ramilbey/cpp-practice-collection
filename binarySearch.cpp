@@ -14,30 +14,24 @@ void print(int size, int arr[]) {
         cout << arr[i] << " ";
     cout << endl;
 }
-void isAscend(int size, int arr[]) {
-    bool isAsc = true;
+bool isAscend(int size, int arr[]) {
     for (int i = 0; i < size - 1; i++) {
         if (arr[i] > arr[i + 1]) {
-            isAsc = false;
-            break;
+            return false;
         }
     }
-    cout << "Is array in ascending order? ";
-    if (isAsc)
-        cout << "True" << endl;
-    else
-        cout << "False" << endl;
+    return true;
 }
 void bubble(int size, int arr[]){
-    for( int i = 0; int i < size; i++)
+    for( int i = 0; i < size; i++)
         for(int j=0; j < size - i -1; j++)
-            if( arr[i] > arr[i+1]){
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i+1] = temp;
+            if( arr[j] > arr[j+1]){
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j+1] = temp;
             }
-    cout << "After Bubble sort"
-    print(size, arr[]);
+    cout << "After Bubble sort";
+    print(size, arr);
 }
 int binary(int arr[], int size, int target){
     int l = 0;
@@ -62,7 +56,29 @@ int main() {
     
     insert(size, arr);
     print(size, arr);
-    isAscend(size, arr);
+    while(!isAscend(size, arr)){
+        cout<< "The elements you entered are not ascending order!"<<endl;
+        cout << "Do you want to..."<< endl;
+        cout << "1.Re-Enter the elements in Acsending order or"<< endl;
+        cout << "2.Let program run the Bubble sort function"<< endl;
+        cout << "Enter your choice 1/2"<<endl;
+        
+        int choice;
+        cin >>choice;
+        
+        if(choice == 1){
+            insert(size,arr);
+            print(size, arr);
+        }
+        else if(choice ==2){
+            bubble(size,arr);
+            break;
+        }
+        else{
+            cout<< "Invalid choice!";
+            cout << "Please choose 1 or 2";
+        }
+    }
     
     cout << "Enter the target number to perform binary search: "; 
     cin >> target;
