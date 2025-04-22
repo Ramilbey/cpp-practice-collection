@@ -8,15 +8,12 @@ void insert(int& size, int arr[]) {
     for (int i = 0; i < size; i++)
         cin >> arr[i];
 }
-
-
 void print(int size, int arr[]) {
     cout << "Array: ";
     for (int i = 0; i < size; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
-
 void isAscend(int size, int arr[]) {
     bool isAsc = true;
     for (int i = 0; i < size - 1; i++) {
@@ -50,18 +47,23 @@ int binary(int arr[], int size, int target){
 int main() {
     int size = 100;
     int arr[size];
-    int target = 2;
-
+    int target;
+    
     insert(size, arr);
     print(size, arr);
     isAscend(size, arr);
+    
+    cout << "Enter the target number to perform binary search: "; 
+    cin >> target;
+    
     int result = binary(arr, size, target);
+    
     if(result != -1)
         cout<< "The target found at index " << result<< endl;
     else 
         cout<< "Average case"<< endl;
         
-    if(result ==0|| result == size-1)
+    if(result ==0|| result == size)
         cout<< "worst case";
     else if( result == size/2)
         cout << "Best case";
