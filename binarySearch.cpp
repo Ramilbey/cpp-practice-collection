@@ -88,7 +88,7 @@ int main() {
     if(result != -1)
         cout<< "The target found at index " << result<< endl;
     else 
-        cout<< "Average case"<< endl;
+        cout<< "Element not found"<< endl;
         
     if(result ==0|| result == size-1)
         cout<< "worst case";
