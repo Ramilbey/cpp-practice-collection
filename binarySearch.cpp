@@ -50,16 +50,22 @@ int binary(int arr[], int size, int target){
 int main() {
     int size = 100;
     int arr[size];
-    int target = 4;
+    int target = 2;
 
     insert(size, arr);
     print(size, arr);
     isAscend(size, arr);
     int result = binary(arr, size, target);
     if(result != -1)
-        cout<< "The target found at index " << result;
+        cout<< "The target found at index " << result<< endl;
     else 
-        cout<< "Element not found";
-
+        cout<< "Average case"<< endl;
+        
+    if(result ==0|| result == size-1)
+        cout<< "worst case";
+    else if( result == size/2)
+        cout << "Best case";
+    else
+        cout<< "Average case";
     return 0;
 }
