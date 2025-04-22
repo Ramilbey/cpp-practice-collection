@@ -28,6 +28,17 @@ void isAscend(int size, int arr[]) {
     else
         cout << "False" << endl;
 }
+void bubble(int size, int arr[]){
+    for( int i = 0; int i < size; i++)
+        for(int j=0; j < size - i -1; j++)
+            if( arr[i] > arr[i+1]){
+                int temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i+1] = temp;
+            }
+    cout << "After Bubble sort"
+    print(size, arr[]);
+}
 int binary(int arr[], int size, int target){
     int l = 0;
     int h = size -1;
