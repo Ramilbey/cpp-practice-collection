@@ -1,8 +1,8 @@
-# C++ Programming Practice Repository
+# C++ Practice Programs
 
-This repository contains a curated collection of C++ programs that cover a wide range of fundamental concepts in programming and computer science. It includes hands-on implementations of arrays, recursion, searching algorithms, loops, mathematical computations, and more.
+This repository is a comprehensive collection of C++ programs that demonstrate fundamental programming techniques, algorithm implementations, and data structure.
+Each file focuses on a specific concept or problem, making this a practical resource for revision, self-study, or <strong> technical interview preparation.</strong>
 
-The code is organized in standalone files, making it easy to browse, run, and understand each concept individually. This repository serves both as a learning tool and a reference for beginners and intermediate learners in C++.
 
 ---
 
