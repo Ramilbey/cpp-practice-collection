@@ -1,7 +1,7 @@
 # C++ Practice Programs
 
 This repository is a comprehensive collection of C++ programs that demonstrate fundamental programming techniques, algorithm implementations, and data structure.
-Each file focuses on a specific concept or problem, making this a practical resource for revision, self-study, or <strong> technical interview preparation.</strong>
+Each file focuses on a specific concept or problem, making this a practical resource for revision, self-study, and <strong> technical interview preparation.</strong>
 
 
 ---
