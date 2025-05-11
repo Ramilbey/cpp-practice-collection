@@ -1,4 +1,4 @@
-#include <iostream> ;
+#include <iostream> 
 using namespace std;
 
 void merge(int arr[], int first, int mid, int last){
@@ -11,20 +11,20 @@ void merge(int arr[], int first, int mid, int last){
   int index = first1;
 
   for(; (first1 <= last1) && (first2 <= last2); index++){
-    if(arr[first1]<arr[last1]){
-      tempArray[index] = arr[first1] ;
+    if(arr[first1]<arr[first2]){
+      tempArray[index] = arr[first1++] ;
     }else {
-      tempArray[index] = arr[first2] ;
+      tempArray[index] = arr[first2++] ;
     }
   }
-  for(; first1 <= last1; index++; first ++){
-    arr[index] = tempArray[first1] ;
+  for(; first1 <= last1; index++, first1 ++){
+    tempArray[index] = arr[first1] ;
   }
-  for(; first2 <= last2; index++; first2++){
-    arr[index] = tempArray[first2];
+  for(; first2 <= last2; index++, first2++){
+    tempArray[index] = arr[first2];
   }
-  for(; int i = first1; i <= last2; i++){
-    arr[i]= tempArray[i]
+  for(int i = first; i <= last; i++){
+    arr[i]= tempArray[i];
   }
   
 }
@@ -32,18 +32,24 @@ void merge(int arr[], int first, int mid, int last){
 void mergeSort(int arr[], int first, int last){
   if(first < last ){
     int mid = (first + last) /2 ;
-    mergeSort(arr, first, mid;
-    mergeSort(arr, mid+1; last);
+    mergeSort(arr, first, mid);
+    mergeSort(arr, mid+1, last);
     merge(arr, first, mid, last);
   }
-}
+};
 
-int main{
+int main() {
   int arr [] = {5,4,3,2,1,9,8,7,6};
   int n = sizeof(arr) / sizeof(arr[0]);
 
   cout << "Before sorting"<<endl;
-  for(int i < 0 ; i < n; i ++)
+  for(int i = 0 ; i < n; i ++)
+    cout << arr[i]<<" ";
+  cout << endl;
+  
+  cout << "After sorting"<< endl;
+  mergeSort(arr, 0, n-1);
+  for(int i = 0 ; i < n; i ++)
     cout << arr[i]<<" ";
   cout << endl;
   return 0;
