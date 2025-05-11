@@ -39,5 +39,12 @@ void mergeSort(int arr[], int first, int last){
 }
 
 int main{
-  
+  int arr [] = {5,4,3,2,1,9,8,7,6};
+  int n = sizeof(arr) / sizeof(arr[0]);
+
+  cout << "Before sorting"<<endl;
+  for(int i < 0 ; i < n; i ++)
+    cout << arr[i]<<" ";
+  cout << endl;
+  return 0;
 }
