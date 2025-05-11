@@ -28,6 +28,16 @@ void merge(int arr[], int first, int mid, int last){
   }
   
 }
+
+void mergeSort(int arr[], int first, int last){
+  if(first < last ){
+    int mid = (first + last) /2 ;
+    mergeSort(arr, first, mid;
+    mergeSort(arr, mid+1; last);
+    merge(arr, first, mid, last);
+  }
+}
+
 int main{
   
 }
