@@ -1,8 +1,9 @@
 #include <iostream> ;
-using napespace std;
+using namespace std;
 
-void mergeSort(int arr[], int first, int mid, int last){
-  int tempArray[];
+void merge(int arr[], int first, int mid, int last){
+  const int SIZE = 100;
+  int tempArray[SIZE];
   int first1 = first; 
   int last1 = mid;
   int first2 = mid+1;
@@ -16,8 +17,17 @@ void mergeSort(int arr[], int first, int mid, int last){
       tempArray[index] = arr[first2] ;
     }
   }
+  for(; first1 <= last1; index++; first ++){
+    arr[index] = tempArray[first1] ;
+  }
+  for(; first2 <= last2; index++; first2++){
+    arr[index] = tempArray[first2];
+  }
+  for(; int i = first1; i <= last2; i++){
+    arr[i]= tempArray[i]
+  }
+  
 }
-
 int main{
   
 }
