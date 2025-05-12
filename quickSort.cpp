@@ -23,6 +23,10 @@ int patrition(int arr[], int first, int last){
       swap(arr[firstUnkown], arr[lastS1]
     }// else it stays in S2 (greater than or equal to pivot)
   }
+     // Put pivot in its proper position (between S1 and S2)
+   swap(theArray[first], theArray[lastS1]);
+
+   return lastS1; // Return index of the pivot
 
 }
 
