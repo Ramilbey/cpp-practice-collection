@@ -12,6 +12,18 @@ int patrition(int arr[], int first, int last){
   int lastS1 = first; // index of last item is S1 (less than pivot)
   int firstUnknown = first+1; // index of first item in unknown region
 
+   // Move items from unknown to proper region one by one
+  for(; firstUnknown <= last; ++firstUnknown){
+      // Invariant:
+      // theArray[first+1..lastS1] < pivot
+      // theArray[lastS1+1..firstUnknown-1] >= pivot
+    if(arr[firstUnknown] < pivot){
+      // belongs to S1
+      ++last1;
+      swap(arr[firstUnkown], arr[lastS1]
+    }// else it stays in S2 (greater than or equal to pivot)
+  }
+
 }
 
 
