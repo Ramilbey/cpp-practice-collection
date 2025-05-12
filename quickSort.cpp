@@ -41,5 +41,15 @@ void printArray(int arr[], int n){
 }
 
 int main (){
-  
+  int arr[] = {4,5,6,7,8,1,2,3,9};
+  int n = 9;
+
+  cout << "Before quickSort" << endl;
+  printArray(arr, n);
+
+  cout << "After quickSort" << endl;
+  quickSort(arr, 0 , n);
+  printArray(arr, n);
+
+  return 0; 
 }
