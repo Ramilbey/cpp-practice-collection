@@ -19,6 +19,7 @@ int fibLoop(int n){
 }
 
 int main() {
+    // stage
     cout <<fib(40)<< " ";
     cout<< fibLoop(40);
     return 0;
