@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std; 
 
+void print( int a[], int n){
+    for( int i =0; i < n; i++)
+        cout<< a[i] << " ";
+    cout << endl;
+}
 void selectionSort(int arr[], int n){
     for(int i = 0; i < n-1; i++){
         int min = i;
@@ -8,13 +13,9 @@ void selectionSort(int arr[], int n){
             if(arr[j]< arr[min]) min = j; 
         }
      swap (arr[i], arr[min]);
+     print(arr, n) // to see all steps
     }
     
-}
-void print( int a[], int n){
-    for( int i =0; i < n; i++)
-        cout<< a[i] << " ";
-    cout << endl;
 }
 
 int main() {
