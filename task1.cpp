@@ -2,3 +2,12 @@
 // Generate a set of integers (user input) into the array in any order. All integers in the array must be unique. Ask the user to input an integer to be searched in the array.
 // Implement both Sequential Search and Binary Search (recursive) and let the program choose the most suitable algorithm to be applied.
 // Print the output if the integer exists and specify the location; otherwise, show that the integer does not exist.
+#include <iostream>;
+using namespace std;
+
+
+
+int main(){
+
+  
+}
