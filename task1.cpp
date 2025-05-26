@@ -6,25 +6,23 @@
 using namespace std;
 
 void insert(int n, int arr[]){
-  cout<< "Enter the number of students ";
-  cin>> n;
   cout<< "Enter students' IDS "<<endl;
   for( int i = 0; i < n; i++)
     cin >> arr[i];
 }
 int seqSearch(int n, int arr[], int i, int target){
-  if(i >= target)
+  if(i >= n)
     return -1;
   if(arr[i] == target)
     return i;
    return seqSearch(n , arr,i+1, target);
 }
-int binarySearch(int arr[], int h, int l, int target){
+int binarySearch(int arr[], int l, int h, int target){
   int mid =(l+h)/2;
   if(arr[mid] == target)
     return mid;
   if( arr[mid] < target)
-    return binarySearch(arr, mid + 1, l, target);
+    return binarySearch(arr, mid + 1, h, target);
   if(arr[mid] > target)
     return binarySearch(arr, l, mid -1, target);
   return -1;
@@ -36,14 +34,21 @@ bool isAscending(int n, int arr[]){
   return true;
 }
 int main(){
-  int n = 100;
+  int n;
+  cout << "Enter the number of students: ";
+  cin >> n;
   int arr[n];
   insert(n, arr);
   int target; 
   cout<< "Enter the target ";
   cin >> target;
+  int result;
   if(isAscending(n, arr))
-    cout << binarySearch(arr, 0, n, target);
+    result = binarySearch(arr, 0, n -1, target);
   else 
-    cout<< seqSearch(n, arr, 0, target); 
+    result = seqSearch(n, arr, 0, target); 
+  if(result !=-1)
+    cout<< target << " is found at index " << result;
+  else 
+    cout << target << " is not found";
 }
