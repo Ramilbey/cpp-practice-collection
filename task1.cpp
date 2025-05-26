@@ -9,9 +9,14 @@ using namespace std;
 
 
 
+
 int main(){
   int n = 10;
   int arr[n] = {2,1,4,3,6,5,7,8,9,10}
+  int target; 
+  cout<< "The target";
+  cin >> target;
+  
 
   
 }
