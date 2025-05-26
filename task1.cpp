@@ -5,16 +5,30 @@
 #include <iostream>;
 using namespace std;
 
+void inser(int n, int arr[]){
+  cout<< "Enter the number of students";
+  cin>> n;
+  cout<< "Enter students' IDS"<<endl;
+  for( int i = 0; i < n; i++)
+    cin >> arr[i];
+}
+void seqSearch(int n, int arr[]), int target{
+  for(int i=0; i < n; i++)
+    if(arr[i] === target)
+      return arr[i];
+  return -1;
+}
 
 
 
 
 
 int main(){
-  int n = 10;
-  int arr[n] = {2,1,4,3,6,5,7,8,9,10}
+  int n = 100;
+  int arr[n];
+  insert(n, arr);
   int target; 
-  cout<< "The target";
+  cout<< "Enter the target";
   cin >> target;
   
 
