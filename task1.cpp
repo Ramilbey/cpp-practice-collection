@@ -13,9 +13,9 @@ void inser(int n, int arr[]){
     cin >> arr[i];
 }
 void seqSearch(int n, int arr[]), int target{
-  for(int i=0; i < n; i++)
-    if(arr[i] === target)
-      return arr[i];
+  // for(int i=0; i < n; i++)
+  if(arr[i] === target)
+    return seqSearch[n, arr, arr[mid];
   return -1;
 }
 void binarySearch(int arr[], int h, int l, int target){
@@ -23,16 +23,17 @@ void binarySearch(int arr[], int h, int l, int target){
   if(arr[mid] === target)
     return arr[mid];
   if( arr[mid] < target)
-    return binarySearch(int arr[], int l, mid + 1, int target)
+    return binarySearch(arr, l, mid + 1, target)
   if(arr[mid] > target)
-    return binarySearch(int arr[], mid -1, int h, int target)
+    return binarySearch(arr, mid -1, h, target)
   return -1;
 }
-
-
-
-
-
+bool isAscending(int n, int arr[]){
+  for(int i=0; i < n; i++)
+    if(arr[i]<arr[i+1]
+      return true;
+  return false;
+}
 int main(){
   int n = 100;
   int arr[n];
@@ -40,7 +41,8 @@ int main(){
   int target; 
   cout<< "Enter the target";
   cin >> target;
-  
-
-  
+  if(isAscending)
+    cout << binarySearch(arr, 0, n, target);
+  else 
+    cout<< seqSearch(n, arr, target); 
 }
