@@ -19,6 +19,8 @@ int seqSearch(int n, int arr[], int i, int target){
 }
 int binarySearch(int arr[], int l, int h, int target){
   int mid =(l+h)/2;
+  if(l > h)
+    return -1;
   if(arr[mid] == target)
     return mid;
   if( arr[mid] < target)
