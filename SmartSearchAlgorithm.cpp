@@ -17,6 +17,7 @@ void insert(int n, int arr[]){
         cout<< "Please enter unique integers, no duplicate!"<< endl;
         duplicate = true;
         break;
+      }
       if(!duplicate){
         arr[i]= temp;
         i++;
