@@ -7,7 +7,7 @@ using namespace std;
 
 void insert(int n, int arr[]){
   int i= 0;
-  while (i> n){
+  while (i < n){
     bool duplicate = false;
     int temp;
     cout<< "Enter students' IDS "<<endl;
@@ -18,9 +18,10 @@ void insert(int n, int arr[]){
         duplicate = true;
         break;
       else{
-        arr[j] = temp;
+        arr[i] = temp;
       }
-  }
+   }
+}
   
   cout<< "Enter students' IDS "<<endl;
   for( int i = 0; i < n; i++)
