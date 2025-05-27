@@ -6,6 +6,22 @@
 using namespace std;
 
 void insert(int n, int arr[]){
+  int i= 0;
+  while (i> n){
+    bool duplicate = false;
+    int temp;
+    cout<< "Enter students' IDS "<<endl;
+    cin >> temp;
+    for(int j= 0; j < i; j++)
+      if(arr[j] == temp){
+        cout<< "Please enter unique integers, no duplicate!"<< endl;
+        duplicate = true;
+        break;
+      else{
+        arr[j] = temp;
+      }
+  }
+  
   cout<< "Enter students' IDS "<<endl;
   for( int i = 0; i < n; i++)
     cin >> arr[i];
