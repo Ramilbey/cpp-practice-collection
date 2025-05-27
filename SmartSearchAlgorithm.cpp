@@ -24,11 +24,6 @@ void insert(int n, int arr[]){
       }
    }
 }
-  
-  cout<< "Enter students' IDS "<<endl;
-  for( int i = 0; i < n; i++)
-    cin >> arr[i];
-}
 int seqSearch(int n, int arr[], int i, int target){
   if(i >= n)
     return -1;
