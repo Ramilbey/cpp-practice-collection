@@ -18,7 +18,6 @@ void loop(int merged[], int size1, int size2, int size3){
   for(int i = 0; i< size1+ size2 + size3; i++)
     cout<< merged[i];
 }
-void loop(
 int main(){
   int size1 = 3;
   int arr1[size1] = {1,2,3};
