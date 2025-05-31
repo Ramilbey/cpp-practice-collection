@@ -59,10 +59,14 @@ int main(){
   cout<< "Enter the target ";
   cin >> target;
   int result;
-  if(isAscending(n, arr))
+  if(isAscending(n, arr)){
     result = binarySearch(arr, 0, n -1, target);
-  else 
+    cout<< "using Binary Seacrh"<< endl;
+  }
+  else{
     result = seqSearch(n, arr, 0, target); 
+    cout<< "using Sequantial Search"endl;
+  }
   if(result !=-1)
     cout<< target << " is found at index " << result;
   else 
