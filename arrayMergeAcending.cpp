@@ -6,7 +6,7 @@
 using namespace std;
 
 void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2, int size3, int merged[]){
-  int index =0
+  int index =0;
   for(int i = 0; i < size1; i++)
     merged[index++] = arr1[i];
   for( int i = 0;i < size2; i++)
@@ -22,7 +22,7 @@ int main(){
   int size1 = 3;
   int arr1[size1] = {1,2,3};
   int size2 = 3;
-  int arr2 = {4,5,6};
+  int arr2[size2] = {4,5,6};
   int size3 = 3;
   int arr3[size3] ={7,8,9};
   int mergedArray[size1 + size2 + size3];
