@@ -5,6 +5,9 @@
 #include <iostream>
 using namespace std;
 
+void arrayMergAcednig(int arr1[], int arr2[], int arr3[], int size1, int size2, size3, int merged[]){
+  
+}
 int main(){
   
 }
