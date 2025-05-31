@@ -18,4 +18,5 @@ int main (){
     int arr2[size2] = {9,10,11};
     int merged[size1 + size2];
     merging(arr1, arr2, size1, size2, merged);
+    loop(merged, size1, size2);
 }
