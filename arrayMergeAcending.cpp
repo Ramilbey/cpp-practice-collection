@@ -2,3 +2,9 @@
 // Note that, all arr1, arr2 and arr3 should be inserted in Ascending order.
 // The merged array should also be in Ascending order.
 // Note that, this task can be done without sorting.
+#include <iostream>
+using namespace std;
+
+int main(){
+  
+}
