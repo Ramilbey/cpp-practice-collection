@@ -21,7 +21,12 @@ void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2,
 
     merged[m++] = minValue;
 
-      
+    if(i < size1 && arr[i] ==minValue)
+      i++;
+    else if(j < size2 && arr[j] == minValue)
+      j++;
+    else if(k < size3 && arr[k] == minValue)
+      k++;
   }
 }
 void loop(int merged[], int size1, int size2, int size3){
