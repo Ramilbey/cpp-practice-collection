@@ -18,6 +18,10 @@ void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2,
       minValue = arr2[j];
     if(k < size3 && arr3[k] < minValue)
       minValue = arr3[k];
+
+    merged[m++] = minValue;
+
+      
   }
 }
 void loop(int merged[], int size1, int size2, int size3){
