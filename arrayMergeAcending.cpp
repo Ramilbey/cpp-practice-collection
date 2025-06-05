@@ -6,7 +6,10 @@
 using namespace std;
 
 void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2, int size3, int merged[]){
-  int index =0;
+  int i = 0;
+  int j = 0;
+  int k =0;
+  int m = 0;
   for(int i = 0; i < size1; i++)
     merged[index++] = arr1[i];
   for( int i = 0;i < size2; i++)
