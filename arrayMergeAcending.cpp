@@ -13,12 +13,6 @@ void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2,
   while(i<size1  || j < size2 || k < size3){
     
   }
-  for(int i = 0; i < size1; i++)
-    merged[index++] = arr1[i];
-  for( int i = 0;i < size2; i++)
-    merged[index++] = arr2[i];
-  for (int i=0; i< size3; i++)
-    merged[index++] = arr3[i];
 }
 void loop(int merged[], int size1, int size2, int size3){
   for(int i = 0; i< size1+ size2 + size3; i++)
