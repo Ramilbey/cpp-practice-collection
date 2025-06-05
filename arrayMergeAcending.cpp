@@ -1,3 +1,4 @@
+
 // Write a program to merge three (3) arrays (arr1, arr2 and arr3) into another array (arrayMerg).
 // Note that, all arr1, arr2 and arr3 should be inserted in Ascending order.
 // The merged array should also be in Ascending order.
@@ -11,7 +12,7 @@ void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2,
   int k =0;
   int m = 0;
   while(i<size1  || j < size2 || k < size3){
-    int minVlaue = 1000;
+    int minValue = 1000;
     if(i < size1 && arr1[i] < minValue) 
       minValue = arr1[i];
     if(j < size2 && arr2[j] < minValue) 
@@ -21,17 +22,17 @@ void arrayMergAcending(int arr1[], int arr2[], int arr3[], int size1, int size2,
 
     merged[m++] = minValue;
 
-    if(i < size1 && arr[i] ==minValue)
+    if(i < size1 && arr1[i] ==minValue)
       i++;
-    else if(j < size2 && arr[j] == minValue)
+    else if(j < size2 && arr2[j] == minValue)
       j++;
-    else if(k < size3 && arr[k] == minValue)
+    else if(k < size3 && arr3[k] == minValue)
       k++;
   }
 }
 void loop(int merged[], int size1, int size2, int size3){
   for(int i = 0; i< size1+ size2 + size3; i++)
-    cout<< merged[i];
+    cout<< merged[i] << " ";
 }
 int main(){
   int size1 = 3;
@@ -44,3 +45,4 @@ int main(){
   arrayMergAcending(arr1, arr2, arr3, size1,size2, size3, mergedArray);
   loop(mergedArray, size1, size2, size3);
 }
+
