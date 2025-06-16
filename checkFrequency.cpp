@@ -22,21 +22,21 @@ void frequency(int arr[],int n, int index, int freq[]){
   freq[arr[index]]++;
   frequency(arr, n, index+1 , freq);
 }
-void selectionSort(int freq[], int num, int n){
+void selectionSort(int freq[], int num[], int n){
   for(int i=0; i < n-1; i++){
     int min = i;
-    for (int j = i-1; j< n; j ++){
+    for (int j = i+1; j< n; j ++){
       if(freq[j] < freq[min])
         min =j;
     }
-    swap(freq[j], freq[min]);
-    swap(num[j], num[min]);
+    swap(freq[i], freq[min]);
+    swap(num[i], num[min]);
 }
 }
 
 int main() {
   srand(time(0));
-  int n = 30;
+  int n = 31;
   int arr[n];
   int freq[n];
   int num[n];
@@ -46,7 +46,7 @@ int main() {
 
    for (int i = 0; i <= n; i++) {
         if (freq[i] > 0)
-            cout << i << " occurred " << freq[i] << " times\n";
+            cout << num[i] << " occurred " << freq[i] << " times\n";
     }
   
 }
