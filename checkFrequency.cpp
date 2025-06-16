@@ -12,7 +12,7 @@ using namespace std;
 
 void generateRandomNumber(int arr[], int n){
   for( int i = 0; i < n; i++){
-    arr[n] = rand() % 31;
+    arr[i] = rand() % 31;
     cout<< arr[i]<< " ";
   }
 }
