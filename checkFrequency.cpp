@@ -36,8 +36,8 @@ void selectionSort(int freq[], int num[], int n){
 
 int main() {
   srand(time(0));
-  int n = 31;
-  int arr[n];
+  int n = 30;
+  int arr[n] = {};
   int freq[n];
   int num[n];
   generateRandomNumber(arr, n);
