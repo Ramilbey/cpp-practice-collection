@@ -15,6 +15,12 @@ void generateRandomNumber(int arr[], int n){
     cout<< arr[i]<< " ":
   }
 }
+void frequency(int arr[],int n int index, int freq[]){
+  if(index == n)
+    return;
+  freq[arrp[index]]++;
+  frequency(arr, n, index+1 , freq)
+}
 
 int main () {
   
