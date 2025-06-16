@@ -23,5 +23,15 @@ void frequency(int arr[],int n int index, int freq[]){
 }
 
 int main () {
+  int n = 30;
+  int arr[n];
+  int freq[n];
+  generateRandomNumber(arr n);
+  frequency(arr, n, 0, freq);
+
+   for (int i = 0; i <= MAX; i++) {
+        if (freq[i] > 0)
+            cout << i << " occurred " << freq[i] << " times\n";
+    }
   
 }
