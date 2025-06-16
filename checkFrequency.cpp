@@ -9,6 +9,13 @@
 #include <cstdlib>
 using namespace std;
 
+void generateRandomNumber(int arr[], int n){
+  for( int i = 0; i < n; i++){
+    arr[n] = rand() % 31;
+    cout<< arr[i]<< " ":
+  }
+}
+
 int main () {
   
 }
