@@ -39,6 +39,10 @@ int main() {
   const int size = 30;
   const int range = 31; // numbers from 0 to 30
 
+  for (int i = 0; i < RANGE; i++) {
+      num[i] = i;
+  }
+
   int arr[size];
   int freq[range] = {0};  // c. Store frequencies (initialized to 0)
   int num[range];
