@@ -36,10 +36,12 @@ void selectionSort(int freq[], int num[], int n){
 
 int main() {
   srand(time(0));
-  int n = 30;
-  int arr[n] = {};
-  int freq[n];
-  int num[n];
+  const int size = 30;
+  const int range = 31; // numbers from 0 to 30
+
+  int arr[size];
+  int freq[range] = {0};  // c. Store frequencies (initialized to 0)
+  int num[range];
   generateRandomNumber(arr, n);
   frequency(arr, n, 0, freq);
   selectionSort(freq, num, n);
