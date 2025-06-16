@@ -7,6 +7,7 @@
 // e.Display every number and its frequency.
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 using namespace std;
 
 void generateRandomNumber(int arr[], int n){
@@ -23,6 +24,7 @@ void frequency(int arr[],int n int index, int freq[]){
 }
 
 int main () {
+  srand(time(0));
   int n = 30;
   int arr[n];
   int freq[n];
