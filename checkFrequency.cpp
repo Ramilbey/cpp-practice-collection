@@ -22,6 +22,15 @@ void frequency(int arr[],int n int index, int freq[]){
   freq[arrp[index]]++;
   frequency(arr, n, index+1 , freq)
 }
+void selectionSort(int arr[], int n){
+  for(int i=0; i < n-1; i++){
+    int min = i;
+    for (int j = i-1; j< n; j ++){
+      if(arr[j] < arr[min])
+        min =j;
+    }
+    swap(arr[j], arr[min])
+}
 
 int main () {
   srand(time(0));
@@ -30,6 +39,7 @@ int main () {
   int freq[n];
   generateRandomNumber(arr n);
   frequency(arr, n, 0, freq);
+  selectionSort(freq, n);
 
    for (int i = 0; i <= MAX; i++) {
         if (freq[i] > 0)
