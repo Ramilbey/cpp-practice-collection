@@ -13,14 +13,14 @@ using namespace std;
 void generateRandomNumber(int arr[], int n){
   for( int i = 0; i < n; i++){
     arr[n] = rand() % 31;
-    cout<< arr[i]<< " ":
+    cout<< arr[i]<< " ";
   }
 }
-void frequency(int arr[],int n int index, int freq[]){
+void frequency(int arr[],int n, int index, int freq[]){
   if(index == n)
     return;
-  freq[arrp[index]]++;
-  frequency(arr, n, index+1 , freq)
+  freq[arr[index]]++;
+  frequency(arr, n, index+1 , freq);
 }
 void selectionSort(int arr[], int n){
   for(int i=0; i < n-1; i++){
@@ -29,19 +29,20 @@ void selectionSort(int arr[], int n){
       if(arr[j] < arr[min])
         min =j;
     }
-    swap(arr[j], arr[min])
+    swap(arr[j], arr[min]);
+}
 }
 
-int main () {
+int main() {
   srand(time(0));
   int n = 30;
   int arr[n];
   int freq[n];
-  generateRandomNumber(arr n);
+  generateRandomNumber(arr, n);
   frequency(arr, n, 0, freq);
   selectionSort(freq, n);
 
-   for (int i = 0; i <= MAX; i++) {
+   for (int i = 0; i <= n; i++) {
         if (freq[i] > 0)
             cout << i << " occurred " << freq[i] << " times\n";
     }
