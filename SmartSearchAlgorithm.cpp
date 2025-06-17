@@ -65,7 +65,7 @@ int main(){
   }
   else{
     result = seqSearch(n, arr, 0, target); 
-    cout<< "using Sequantial Search"endl;
+    cout<< "using Sequantial Search"<<endl;
   }
   if(result !=-1)
     cout<< target << " is found at index " << result;
