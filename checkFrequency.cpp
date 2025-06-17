@@ -11,48 +11,53 @@
 using namespace std;
 
 void generateRandomNumber(int arr[], int n){
-  for( int i = 0; i < n; i++){
-    arr[i] = rand() % 31;
-    cout<< arr[i]<< " ";
-  }
-}
-void frequency(int arr[],int n, int index, int freq[]){
-  if(index == n)
-    return;
-  freq[arr[index]]++;
-  frequency(arr, n, index+1 , freq);
-}
-void selectionSort(int freq[], int num[], int n){
-  for(int i=0; i < n-1; i++){
-    int min = i;
-    for (int j = i+1; j< n; j ++){
-      if(freq[j] < freq[min])
-        min =j;
+    for (int i = 0; i < n; i++) {
+        arr[i] = rand() % 31;
+        cout << arr[i] << " ";
     }
-    swap(freq[i], freq[min]);
-    swap(num[i], num[min]);
+    cout << endl;
 }
+
+void frequency(int arr[], int n, int index, int freq[]) {
+    if (index == n)
+        return;
+    freq[arr[index]]++;
+    frequency(arr, n, index + 1, freq);
+}
+
+void selectionSort(int freq[], int num[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int min = i;
+        for (int j = i + 1; j < n; j++) {
+            if (freq[j] < freq[min])
+                min = j;
+        }
+        swap(freq[i], freq[min]);
+        swap(num[i], num[min]);
+    }
 }
 
 int main() {
-  srand(time(0));
-  const int size = 30;
-  const int range = 31; // numbers from 0 to 30
+    srand(time(0));
+    const int size = 30;
+    const int range = 31; // numbers from 0 to 30
 
-  for (int i = 0; i < RANGE; i++) {
-      num[i] = i;
-  }
+    int arr[size];
+    int freq[range] = {0};
+    int num[range];
 
-  int arr[size];
-  int freq[range] = {0};  // c. Store frequencies (initialized to 0)
-  int num[range];
-  generateRandomNumber(arr, n);
-  frequency(arr, n, 0, freq);
-  selectionSort(freq, num, n);
+    for (int i = 0; i < range; i++) {
+        num[i] = i;
+    }
 
-   for (int i = 0; i <= n; i++) {
+    generateRandomNumber(arr, size);
+    frequency(arr, size, 0, freq);
+    selectionSort(freq, num, range);
+
+    for (int i = 0; i < range; i++) {
         if (freq[i] > 0)
             cout << num[i] << " occurred " << freq[i] << " times\n";
     }
-  
+
+    return 0;
 }
