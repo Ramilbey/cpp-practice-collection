@@ -53,10 +53,12 @@ int main() {
     generateRandomNumber(arr, size);
     frequency(arr, size, 0, freq);
     selectionSort(freq, num, range);
+    
+    cout<< "Numbers\t\t" << "frequency"<<endl ;
 
     for (int i = 0; i < range; i++) {
         if (freq[i] > 0)
-            cout << num[i] << " occurred " << freq[i] << " times\n";
+            cout << num[i] << " \t\t\t " << freq[i] << " \n";
     }
 
     return 0;
