@@ -17,7 +17,7 @@ void generateLock() {
         lock[i] = values[randomIndex];
     }
 
-    cout << "🔒 Lock: ";
+    cout << "Lock: ";
     for (int i = 0; i < SIZE; i++) cout << lock[i];
     cout << endl;
 }
@@ -50,12 +50,12 @@ int main() {
     generateLock();
 
     if (backtrack(0)) {
-        cout << "✅ Lock cracked after " << totalTries << " attempts!" << endl;
-        cout << "🔑 Combination: ";
+        cout << "Lock cracked after " << totalTries << " attempts!" << endl;
+        cout << "Combination: ";
         for (int i = 0; i < SIZE; i++) cout << guess[i];
         cout << endl;
     } else {
-        cout << "❌ Could not crack the lock." << endl;
+        cout << "Could not crack the lock." << endl;
     }
 
     return 0;
