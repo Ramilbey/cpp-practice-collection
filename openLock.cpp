@@ -57,9 +57,7 @@ int main() {
     } else {
         cout << "Could not crack the lock." << endl;
     }
-    cout << "Randomly assigned combinations of lock: ";
-    for(int i =0 ; i< SIZE; i++)
-         cout << lock[i];
+   
 
     return 0;
 }
