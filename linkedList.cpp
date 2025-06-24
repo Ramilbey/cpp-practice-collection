@@ -21,12 +21,12 @@ void printList(Node *head){
 }
 int findNode(Node *&head, int value){
     Node *curr=head;
-    int i;
+    int currentIndex = 1;
     while( curr){
         if( curr->data = value)
-            return i;
+            return currentIndex;
         curr=curr->next;
-        i++;
+        currentIndex++;
     }
     return -1;
 }
@@ -36,6 +36,7 @@ int main() {
     head->next = createNode(20);
     head->next->next = createNode(30);
     printList( head);
+    cout<< findNode(head, 30);
 
     return 0;
 }
