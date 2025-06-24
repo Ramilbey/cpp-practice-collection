@@ -23,7 +23,7 @@ int findNode(Node *&head, int value){
     Node *curr=head;
     int currentIndex = 1;
     while( curr){
-        if( curr->data = value)
+        if( curr->data ==value)
             return currentIndex;
         curr=curr->next;
         currentIndex++;
