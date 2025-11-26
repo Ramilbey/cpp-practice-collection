@@ -1,17 +1,15 @@
-# 🚀 C++ Practice Collection
+# C++ Practice Collection
 *A Curated Repository of C++ Practice Projects & Exercises*
 
 ---
 
-## 📚 Overview
+## Overview
 
 This repository is a structured collection of C++ practice programs, algorithms, and problem-solving exercises. It serves as a personal learning archive as I work toward mastering core C++ programming concepts, ranging from foundational syntax to advanced topics like pointers, memory management, data structures, and algorithms.
 
 Each file in this repository is written with clarity and simplicity in mind, with a strong emphasis on **readability**, **logical flow**, and **concept reinforcement**.
 
 ---
-
-## 🎯 Learning Objectives
 
 This repository reflects my commitment to building a strong foundation in:
 - ✅ Core C++ Syntax & Programming Principles
