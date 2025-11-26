@@ -22,17 +22,3 @@ This repository reflects my commitment to building a strong foundation in:
 - ✅ Algorithms & Computational Thinking
 - ✅ File I/O Operations
 
----
-
-## 📂 Repository Structure
-
-```bash
-cpp-practice-collection/
-│
-├── basics/             # Basic C++ programs (variables, conditionals, loops)
-├── functions/          # Function-based problems and modularization
-├── pointers/           # Pointers, memory allocation, and manipulation
-├── data-structures/    # Linked lists, stacks, queues, trees
-├── recursion/          # Recursive problem-solving approaches
-├── algorithms/         # Sorting, searching, and algorithm design
-└── file-io/            # Reading from and writing to files
